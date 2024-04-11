@@ -73,7 +73,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .section-title {
-  font-size: 30px;
+  font-size: 10px;
   color: #222222;
   display: inline-block;
   font-weight: 700;
@@ -127,7 +127,7 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-common {
-  background-color: #F63854;
+  background-color: #4B0082;
   position: relative;
   z-index: 1;
   text-transform: uppercase;
@@ -1274,7 +1274,6 @@ textarea {
 
 /*cta
 */
-#cta{background: ;}
 
 /* Footer Area Start */
 .footer-area {

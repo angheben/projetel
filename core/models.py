@@ -11,7 +11,7 @@ def get_file_path(_instance, filename):
 
 class Base(models.Model):
     creation = models.DateField(name='Creation', auto_now_add=True)
-    modification = models.DateField(name='Actualization', auto_now=True)
+    modification = models.DateField(name='Modification', auto_now=True)
     active = models.BooleanField(name='Active', default=True)
 
     class Meta:
