@@ -428,6 +428,12 @@ hr {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
+.service-heading {
+  text-align: center;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
 .services-item .icon {
   border: 1px solid #f1f1f1;
   width: 70px;

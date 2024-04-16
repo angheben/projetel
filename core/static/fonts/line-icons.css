@@ -945,3 +945,6 @@
 .lni-zoom-out:before {
   content: "\ea32";
 }
+.lni lni-bulb{
+  content: "\ea33";
+}
