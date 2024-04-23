@@ -25,11 +25,17 @@ class Service(Base):
         ('lni-users', 'Users'),
         ('lni-layers', 'Design'),
         ('lni-mobile', 'Mobile'),
-        ('lni-rocket', 'Rocket')
+        ('lni-rocket', 'Rocket'),
+        ('lni-agenda', 'Agenda'),
+        ('lni-alarm', 'Alarm'),
+        ('lni-apartment', 'Apartment'),
+        ('lni-information', 'Information'),
+        ('lni-laptop-phone', 'Equipment'),
+        ('lni-shortcode', 'Code')
     )
     service = models.CharField(name='Service', max_length=100)
     description = models.TextField(name='Description', max_length=200)
-    icon = models.CharField(name='Icon', max_length=12, choices=ICON_CHOICES)
+    icon = models.CharField(name='Icon', max_length=18, choices=ICON_CHOICES)
 
     class Meta:
         verbose_name = 'Services'

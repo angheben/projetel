@@ -21,7 +21,7 @@ body {
 
 h1, h2, h3, h4 {
   font-size: 38px;
-  color: #222222;
+  color: white;
   font-weight: 700;
   font-family: 'Arvo', serif;
 }
@@ -74,7 +74,7 @@ a:not([href]):not([tabindex]) {
 
 .section-title {
   font-size: 10px;
-  color: #222222;
+  color: white;
   display: inline-block;
   font-weight: 700;
   position: relative;
