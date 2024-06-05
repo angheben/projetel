@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  {% load static %}
+{% load static %}
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,6 +8,8 @@
 
     <title>Projetel</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/logo.png' %}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
     <!-- Icon -->
@@ -33,7 +35,7 @@
       <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'img/logo2.png' %}" alt=""></a>
+          <a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'img/logo3.1.png' %}" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -49,23 +51,6 @@
                   Serviços
                 </a>
               </li>
-              <!--
-              <li class="nav-item">
-                <a class="nav-link" href="#team">
-                  Team
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pricing">
-                  Preço
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#testimonial">
-                  Testemunhos
-                </a>
-              </li>
-              -->
               <li class="nav-item">
                 <a class="nav-link" href="#contact">
                   Contato
@@ -76,18 +61,20 @@
         </div>
       </nav>
       <!-- Navbar End -->
-    {% block content %}
+    </header>
 
+    {% block content %}
     {% endblock %}
+
+    <!-- Whatsapp Link -->
+    <a href="https://wa.me/5549999670120?text=Gostaria%20de%20saber%20mais%20sobre%20seus%20produtos%20e%20serviços" class="whatsapp-button">
+
+      <i class="lni lni-whatsapp"></i>
+    </a>
 
     <!-- Go to Top Link -->
     <a href="#" class="back-to-top">
-    	<i class="lni-arrow-up"></i>
-    </a>
-
-    <!-- Whatsapp Link -->
-    <a href=" https://wa.me/?text=I'm%20Gostaria%20de%20saber%20mais%20sobre%20seus%20produtos%20e%20serviços`">
-      <i class=""></i>
+      <i class="lni-arrow-up"></i>
     </a>
 
     <!-- Preloader -->
@@ -97,7 +84,7 @@
     <!-- End Preloader -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{% static 'js/jquery-min.js' %} "></script>
+    <script src="{% static 'js/jquery-min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/owl.carousel.min.js' %}"></script>
@@ -109,5 +96,26 @@
     <script src="{% static 'js/form-validator.min.js' %}"></script>
     <script src="{% static 'js/contact-form-script.min.js' %}"></script>
 
+    <!-- Add custom styling for the WhatsApp button -->
+    <style>
+      .whatsapp-button {
+        position: fixed;
+        bottom: 80px; /* Adjust the position above the back-to-top button */
+        right: 20px;
+        background-color: #25D366;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-size: 24px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+      .whatsapp-button i {
+        margin-right: 8px;
+      }
+    </style>
   </body>
 </html>

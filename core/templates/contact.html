@@ -1,54 +1,30 @@
 {% load static %}
 <section id="contact" class="section-padding bg-gray">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Fale conosco</h2>
-          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-        </div>
-        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
-          <div class="col-lg-7 col-md-12 col-sm-12">
-            <div class="contact-block">
-              <form id="contactForm" method="post" action="{% url 'index' %}">
-                {% csrf_token %}
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="Name" placeholder="Nome" required data-error="Informe seu nome">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" placeholder="Email" id="Email" class="form-control" name="email" required data-error="Informe seu e-mail">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                   <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Assunto" id="Subject" name="subject" class="form-control" required data-error="Informe sua mensagem">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea class="form-control" id="Message" name="message" placeholder="Mensagem" rows="7" data-error="Write your message" required></textarea>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="submit-button text-left">
-                      <button class="btn btn-common" id="form-submit" type="submit">Enviar Mensagem</button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
+  <div class="container">
+    <div class="section-header text-center">
+      <h3 style="color:black">Fale Conosco</h3>
+      <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+    </div>
+    <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-lg-7 col-md-12 col-sm-12">
+        <div class="contact-block">
+          <div class="contact-info" style="margin-bottom: 20px;">
+            <h4 style="color: black;">Vendas</h4>
+            <p><strong>Telefone:</strong> +55 49 3344-1888</p>
+            <p><strong>Email:</strong> vendas@projetel.com.br</p>
           </div>
-          <div class="col-lg-5 col-md-12 col-xs-12">
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.110607594938!2d-52.85296772491004!3d-26.35528427014351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fab0f308c6e803%3A0xecacc75967ba2f6d!2sProjetel%20Materiais%20El%C3%A9tricos!5e0!3m2!1spt-BR!2sbr!4v1713222177781!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+          <div class="contact-info" style="margin-bottom: 20px;">
+            <h4 style="color: black;">Serviços</h4>
+            <p><strong>Telefone:</strong> +55 49 99967-0120</p>
+            <p><strong>Email:</strong> servicos@projetel.com.br</p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-lg-5 col-md-12 col-xs-12">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.110607594938!2d-52.85296772491004!3d-26.35528427014351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fab0f308c6e803%3A0xecacc75967ba2f6d!2sProjetel%20Materiais%20El%C3%A9tricos!5e0!3m2!1spt-BR!2sbr!4v1713222177781!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,26 +1,40 @@
 {% load static %}
-<div class="about-area section-padding bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-xs-12 info">
-            <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
-              <div>
-                <div class="site-heading">
-                  <h2 class="section-title">Resultados dos nossos serviços</h2>
-                </div>
-                <div class="content">
-                  <p>
-                    Presente nas casas de grande parte dos cidadãos da cidade de São Lourenço do Oeste e região, a Projetel atinge de forma direta,
-                    através dos seu serviços e produtos, no impacto do bem estar das residências e indústrias da sociedade.
-                  </p>
-                  <a href="#" class="btn btn-common mt-3" style="background-color: #000080;">Veja mais</a>
-                </div>
-              </div>
+<div class="about-area section-padding" style="background-color: black; background-image: url('{% static 'img/fundo.png' %}'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+        <img class="img-fluid" src="{% static 'img/projeteln.jpg' %}" alt="">
+      </div>
+      <div class="col-lg-6 col-md-12 col-xs-12 info">
+        <div class="about-wrapper wow fadeInRight" data-wow-delay="0.3s">
+          <div>
+            <div class="site-heading">
+              <h3 style="color: white;">Resultado dos Nossos Serviços</h3>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-            <img class="img-fluid" src="{% static 'img/bagua.jpg' %}" alt="" >
+            <div class="content">
+              <p style="color: white;">
+                Presente nas casas de grande parte dos cidadãos da cidade de São Lourenço do Oeste e região, a Projetel atinge de forma direta,
+                através dos seu serviços e produtos, no impacto do bem estar das residências e indústrias da sociedade.
+              </p>
+              <a href="" class="btn btn-common mt-3" style="background-color: #116182;">Veja mais</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<style>
+  .about-area {
+    background-image: url('{% static 'img/background.jpg' %}');
+    background-size: cover;
+    background-position: center;
+  }
+  .about-area .info .site-heading h3 {
+    color: white !important;
+  }
+  .about-area .info .content p {
+    color: white !important;
+  }
+</style>

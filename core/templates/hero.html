@@ -1,38 +1,44 @@
 {% load static %}
-<div id="hero-area" class="hero-area-bg" style="background-image: url('{% static 'img/background1.jpg' %}');">
+<div id="hero-area" class="hero-area-bg" style="background-image: url('{% static 'img/home.png' %}'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; position: relative;">
   <div class="container">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-              <div class="contents">
-                <h2 class="head-title" style="color: white">Projetel<br>Uma empresa completa em serviços elétricos</h2>
-                <p>Soluções diversas em projetos, produtos e serviços elétricos em São Lourenço do Oeste e região para atendê-lo da melhor forma.<br> Baixe nosso catálogo e conheça nossa linha de produtos</p>
-                <div class="header-button">
-                  <a href="#" class="btn btn-common">Download</i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-              <div class="intro-img">
-                <!-- <img class="img-fluid" src="{% static 'img/eletrico01.png' %}" alt=""> -->
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+          <div class="contents">
+            <h2 class="head-title" style="color: white">Projetel<br>Uma empresa completa em serviços elétricos</h2>
+            <p>Soluções diversas em projetos, produtos e serviços elétricos em São Lourenço do Oeste e região para atendê-lo da melhor forma.<br> Baixe nosso catálogo e conheça nossa linha de produtos</p>
+            <div class="header-button">
+              <a href="https://wa.me/554933441888?text=Gostaria%20de%20saber%20mais%20sobre%20seus%20produtos%20e%20serviços" class="btn btn-common" style="background-color: #116182">Eu quero aprender</a>
             </div>
           </div>
         </div>
-
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <div class="intro-img">
+            <!-- <img class="img-fluid" src="{% static 'img/eletrico01.png' %}" alt=""> -->
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <div class="container">
-        {% if messages %}
-          {% for m in messages %}
-            <div class="alert alert-{{ m.tags }}">
-              <button type="button" class="close" data-dismiss="alert"></button>
-              <strong> {{ m }} </strong>
-            </div>
-          {% endfor %}
-        {% endif %}
+  <div class="container">
+    {% if messages %}
+      {% for m in messages %}
+        <div class="alert alert-{{ m.tags }}">
+          <button type="button" class="close" data-dismiss="alert"></button>
+          <strong> {{ m }} </strong>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
 
-      </div>
-
-</header>
-    <!-- Header Area wrapper End -->
+<style>
+  .hero-area-bg {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100vh !important;
+    position: relative !important;
+  }
+</style>
